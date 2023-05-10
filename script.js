@@ -56,15 +56,11 @@ checkBtn.addEventListener('click', function()
             hightScore.innerText = score.innerText;
         }
 
-    }else if( inputGuess.value < randomNumber )
-    {
-        displayMessage("📉 Too low!");
-        checkScore();
-    }else 
-    {
-        displayMessage("📈 Too high!");
+    }else {
+        inputGuess.value < randomNumber ?  displayMessage("📉 Too low!") : displayMessage("📈 Too high!");
         checkScore();
     }
+   
     
     
     
